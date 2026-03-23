@@ -152,6 +152,7 @@ Then display the updated leaderboard table(s) inline.
 - After appending new rows, always re-sort and re-number `Rank` for the full CSV — not just the new entries.
 - Both LangGraph and Google ADK are valid frameworks — never penalize framework choice.
 - Flag hardcoded API keys as a security note in the report but do **not** deduct points.
+- **API key redaction**: If a submission contains a hardcoded API key or secret (e.g. `api_key="sk-..."`, `API_KEY = "..."`, `password = "..."`, `token = "..."`), **never include the actual key value anywhere in the report or CSV**. Replace the key value with `<yourpassword>` in all report output. Example: `api_key="gsk_2IBnbO..."` → report as `api_key="<yourpassword>"`. This applies to any credential-like string: API keys, tokens, passwords, secrets, connection strings.
 - Be fair and constructive — these are learners, not production engineers.
 - If a submission is empty or boilerplate only, score 0 on all criteria and note kindly.
 - If a member has multiple files, evaluate all together as one submission.

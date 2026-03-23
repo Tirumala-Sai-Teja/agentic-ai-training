@@ -108,7 +108,7 @@
 - Remove or fix the legacy `process_document` function
 
 **Code Quality Notes**:
-- **SECURITY ISSUE**: Hardcoded Groq API key found in cell 19: `client = Groq(api_key="gsk_2IBn...")`. Rotate this key immediately and use Colab Secrets or environment variables.
+- **SECURITY ISSUE**: Hardcoded Groq API key found in cell 19: `client = Groq(api_key="<yourpassword>")`. Rotate this key immediately and use Colab Secrets or environment variables.
 
 ---
 
