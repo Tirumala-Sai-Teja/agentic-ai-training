@@ -1,0 +1,3 @@
+Rank,Member,Location,Technical_Score,Design_Process,Code_Completion,Documentation,Total_Score,Grade,Framework,Evaluated_On
+1,Prem,CHN,100,10,10,8,128,A,LangChain/LangGraph,2026-03-23
+2,Steffina,CHN,80,7,7,4,98,B,LangChain/LangGraph,2026-03-23
