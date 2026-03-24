@@ -1,0 +1,8 @@
+langchain
+langgraph
+langchain-groq
+pypdf
+python-dotenv
+sqlite-utils
+easyocr
+pdf2image
