@@ -1,0 +1,7 @@
+langgraph
+langchain
+Groq
+pydantic
+python-dotenv
+pytesseract
+pillow
