@@ -1,0 +1,15 @@
+2026-03-22 11:37:58.768596 | LOA5.pdf | Final: IRRELEVANT | LLM: CEASE | Confidence: 80 | HITL Reason: None | Reason: Human reviewed decision
+2026-03-22 11:38:24.504561 | LOA7.pdf | Final: IRRELEVANT | LLM: CEASE | Confidence: 80 | HITL Reason: None | Reason: Human reviewed decision
+2026-03-22 11:38:38.815429 | LOA8.pdf | Final: IRRELEVANT | LLM: CEASE | Confidence: 80 | HITL Reason: None | Reason: Human reviewed decision
+2026-03-22 11:38:52.981668 | LOA9.pdf | Final: IRRELEVANT | LLM: CEASE | Confidence: 80 | HITL Reason: None | Reason: Human reviewed decision
+2026-03-22 11:39:15.561258 | LoA1.pdf | Final: IRRELEVANT | LLM: CEASE | Confidence: 80 | HITL Reason: None | Reason: Human reviewed decision
+2026-03-22 11:39:18.806410 | bw_doc_1.pdf | Final: IRRELEVANT | LLM: None | Confidence: None | HITL Reason: Scanned Document | Reason: Human reviewed decision
+2026-03-22 11:39:20.432687 | bw_doc_2.pdf | Final: IRRELEVANT | LLM: None | Confidence: None | HITL Reason: Scanned Document | Reason: Human reviewed decision
+2026-03-22 11:39:21.328258 | bw_doc_3.pdf | Final: IRRELEVANT | LLM: None | Confidence: None | HITL Reason: Scanned Document | Reason: Human reviewed decision
+2026-03-22 11:39:22.535766 | bw_doc_4.pdf | Final: IRRELEVANT | LLM: None | Confidence: None | HITL Reason: Scanned Document | Reason: Human reviewed decision
+2026-03-22 11:39:23.400841 | bw_doc_5.pdf | Final: IRRELEVANT | LLM: None | Confidence: None | HITL Reason: Scanned Document | Reason: Human reviewed decision
+2026-03-22 11:39:24.308399 | notice_1.pdf | Final: IRRELEVANT | LLM: None | Confidence: None | HITL Reason: Scanned Document | Reason: Human reviewed decision
+2026-03-22 11:39:25.619140 | notice_2.pdf | Final: IRRELEVANT | LLM: None | Confidence: None | HITL Reason: Scanned Document | Reason: Human reviewed decision
+2026-03-22 11:39:26.508106 | notice_3.pdf | Final: IRRELEVANT | LLM: None | Confidence: None | HITL Reason: Scanned Document | Reason: Human reviewed decision
+2026-03-22 11:39:27.395469 | notice_4.pdf | Final: IRRELEVANT | LLM: None | Confidence: None | HITL Reason: Scanned Document | Reason: Human reviewed decision
+2026-03-22 11:39:28.464931 | notice_5.pdf | Final: IRRELEVANT | LLM: None | Confidence: None | HITL Reason: Scanned Document | Reason: Human reviewed decision
