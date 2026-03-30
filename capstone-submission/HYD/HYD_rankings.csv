@@ -1,3 +1,16 @@
 Rank,Member,Location,Technical_Score,Design_Process,Code_Completion,Documentation,Total_Score,Grade,Framework,Evaluated_On
 1,Bhargav,HYD,100,10,10,10,130,A,LangChain/LangGraph,2026-03-23
-2,Hema,HYD,84,7,7,5,103,B,LangChain/LangGraph,2026-03-23
+2,Bhargav Mangavalli,HYD,100,10,10,9,129,A,LangChain/LangGraph,2026-03-29
+3,Surya Ch,HYD,100,9,9,8,126,A,LangChain/LangGraph,2026-03-29
+4,Sasikala Annam,HYD,93,9,9,9,120,A,Google ADK,2026-03-29
+5,Sudileti Rajesh,HYD,93,9,9,8,119,A,LangChain/LangGraph,2026-03-29
+6,Keerthi Chiluvuri,HYD,90,8,8,7,113,B,LangChain/LangGraph,2026-03-29
+7,Suresh Reddy,HYD,90,8,8,7,113,B,LangChain/LangGraph,2026-03-29
+8,Geetamadhuri Mallidi,HYD,88,8,8,8,112,B,Other,2026-03-29
+9,Hema,HYD,84,7,7,5,103,B,LangChain/LangGraph,2026-03-23
+10,Ravi Kvs,HYD,84,7,6,5,102,B,LangChain/LangGraph,2026-03-29
+11,Hema Katyal,HYD,74,6,7,5,92,C,LangChain/LangGraph,2026-03-29
+12,Praveen Kumar,HYD,74,6,7,5,92,C,LangChain/LangGraph,2026-03-29
+13,Sushma Reddy,HYD,74,6,7,5,92,C,LangChain/LangGraph,2026-03-29
+14,Utkarsh Rajpal,HYD,64,7,7,5,83,C,LangChain/LangGraph,2026-03-29
+15,Bala Nagendra,HYD,59,7,5,6,77,D,LangChain/LangGraph,2026-03-29

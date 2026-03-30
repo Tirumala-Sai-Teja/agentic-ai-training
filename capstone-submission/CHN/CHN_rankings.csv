@@ -1,3 +1,24 @@
 Rank,Member,Location,Technical_Score,Design_Process,Code_Completion,Documentation,Total_Score,Grade,Framework,Evaluated_On
-1,Prem,CHN,100,10,10,8,128,A,LangChain/LangGraph,2026-03-23
-2,Steffina,CHN,80,7,7,4,98,B,LangChain/LangGraph,2026-03-23
+1,Karthik K,CHN,100,10,10,10,130,A,LangChain/LangGraph,2026-03-29
+2,Prem,CHN,100,10,10,8,128,A,LangChain/LangGraph,2026-03-23
+3,Ansari,CHN,100,9,10,9,128,A,LangChain/LangGraph,2026-03-29
+4,Marimuthu,CHN,98,9,9,8,124,A,LangChain/LangGraph,2026-03-29
+5,ThamizhChezhiyan,CHN,96,9,9,9,123,A,LangChain/LangGraph,2026-03-29
+6,Kartik R,CHN,95,9,9,8,121,A,LangChain/LangGraph,2026-03-29
+7,Sudhakar,CHN,93,8,9,8,118,A,LangChain/LangGraph,2026-03-29
+8,Bharath,CHN,91,8,9,7,115,B,LangChain/LangGraph,2026-03-29
+9,Thiru,CHN,90,8,9,7,114,B,LangChain/LangGraph,2026-03-29
+10,Prasanna,CHN,84,7,8,8,107,B,LangChain/LangGraph,2026-03-29
+11,Sathya,CHN,83,8,8,7,106,B,LangChain/LangGraph,2026-03-29
+12,Siva,CHN,82,8,9,7,106,B,LangChain/LangGraph,2026-03-29
+13,Praveen,CHN,82,8,7,7,104,B,LangChain/LangGraph,2026-03-29
+14,Boopathi,CHN,80,7,8,5,100,B,LangChain/LangGraph,2026-03-29
+15,Mani,CHN,78,8,8,6,100,B,LangChain/LangGraph,2026-03-29
+16,Steffina,CHN,80,7,7,4,98,B,LangChain/LangGraph,2026-03-23
+17,Magdaleen,CHN,77,7,7,7,98,B,LangChain/LangGraph,2026-03-29
+18,Divya,CHN,74,7,7,7,95,C,LangChain/LangGraph,2026-03-29
+19,Ramanakumar,CHN,72,7,8,7,94,C,LangChain/LangGraph,2026-03-29
+20,Ramkumar,CHN,73,6,6,6,91,C,LangChain/LangGraph,2026-03-29
+21,Jayaram,CHN,59,6,7,6,78,C,Other,2026-03-29
+22,Mragya,CHN,60,5,6,4,75,C,LangChain/LangGraph,2026-03-29
+23,Saravana,CHN,51,6,6,6,69,D,Google ADK,2026-03-29
