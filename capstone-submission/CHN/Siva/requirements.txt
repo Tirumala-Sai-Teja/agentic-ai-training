@@ -1,8 +1,0 @@
-python-dotenv
-langgraph
-langchain_groq
-langchain-core
-langgraph-checkpoint-sqlite
-
-pymupdf
-streamlit
