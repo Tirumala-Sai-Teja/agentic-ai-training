@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from google.adk.agents import Agent
+from google.adk.agents.llm_agent import LlmAgent
 from google.adk.models.lite_llm import LiteLlm
 from datetime import datetime
 import requests
@@ -8,11 +8,19 @@ import requests
 # Load environment variables from .env file
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 
-# https://docs.litellm.ai/docs/providers/groq
+# Using current Gemini model through LiteLLM
+# Updated to gemini-3.6-flash as gemini-2.0-flash is no longer available
 model = LiteLlm(
-    model="groq/llama-3.1-8b-instant",
-    api_key=os.getenv("GROQ_API_KEY"),
+    model="gemini/gemini-3.6-flash",
+    api_key=os.getenv("GOOGLE_API_KEY"),
 )
+
+# Other current Gemini model options through LiteLLM:
+# model = LiteLlm(model="gemini/gemini-2.5-flash", api_key=os.getenv("GOOGLE_API_KEY"))
+# model = LiteLlm(model="gemini/gemini-1.5-flash", api_key=os.getenv("GOOGLE_API_KEY"))
+
+# Alternative: If you want to use Groq models (may have multi-turn issues with tools)
+# model = LiteLlm(model="groq/qwen/qwen3.6-27b", api_key=os.getenv("GROQ_API_KEY"))
 
 def get_current_time() -> dict:
     """
@@ -56,9 +64,8 @@ def google_search(query: str) -> dict:
             "error": str(e),
         }
 
-root_agent = Agent(
+root_agent = LlmAgent(
     name="tool_agent",
-    #model="gemini-2.0-flash",
     model=model,
     description="Tool agent",
     instruction="""
