@@ -2,17 +2,21 @@ import os
 import random
 from dotenv import load_dotenv
 
-from google.adk.agents import Agent
+from google.adk.agents.llm_agent import LlmAgent
 from google.adk.models.lite_llm import LiteLlm
 
 # Load environment variables from .env file
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 
-# https://docs.litellm.ai/docs/providers/groq
+# Using same model as tool agent for consistency
+# Updated to gemini-3.6-flash as gemini-2.0-flash is no longer available
 model = LiteLlm(
-    model="groq/llama-3.3-70b-versatile",
-    api_key=os.getenv("GROQ_API_KEY"),
+    model="gemini/gemini-3.6-flash",
+    api_key=os.getenv("GOOGLE_API_KEY"),
 )
+
+# Alternative: If you want to use Groq models (may have multi-turn issues with tools)
+# model = LiteLlm(model="groq/qwen/qwen3.6-27b", api_key=os.getenv("GROQ_API_KEY"))
 
 
 def get_dad_joke() -> str:
@@ -29,7 +33,7 @@ def get_dad_joke() -> str:
     return random.choice(jokes)
 
 
-root_agent = Agent(
+root_agent = LlmAgent(
     name="dad_joke_agent",
     model=model,
     description="Dad joke agent",
