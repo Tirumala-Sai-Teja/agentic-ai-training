@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore", category=RuntimeWarning, module="litellm")
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
 from google.genai import types
-from question_answering_agent import question_answering_agent
+from question_answering_agent import root_agent
 
 
 async def main():
@@ -40,7 +40,7 @@ async def main():
     print(f"\tSession ID: {SESSION_ID}")
 
     runner = Runner(
-        agent=question_answering_agent,
+        agent=root_agent,
         app_name=APP_NAME,
         session_service=session_service_stateful,
     )
