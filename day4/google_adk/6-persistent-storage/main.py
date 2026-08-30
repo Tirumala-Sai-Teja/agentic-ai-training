@@ -4,7 +4,7 @@ import warnings
 from dotenv import load_dotenv
 from google.adk.runners import Runner
 from google.adk.sessions import DatabaseSessionService
-from memory_agent.agent import memory_agent
+from memory_agent.agent import root_agent
 from utils import call_agent_async
 
 # Suppress ADK and dependency warnings
@@ -57,7 +57,7 @@ async def main_async():
     # ===== PART 4: Agent Runner Setup =====
     # Create a runner with the memory agent
     runner = Runner(
-        agent=memory_agent,
+        agent=root_agent,
         app_name=APP_NAME,
         session_service=session_service,
     )

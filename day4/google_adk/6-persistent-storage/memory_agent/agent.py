@@ -1,16 +1,24 @@
 import os
-from google.adk.agents import Agent
+from google.adk.agents.llm_agent import LlmAgent
 from google.adk.tools.tool_context import ToolContext
 from google.adk.models.lite_llm import LiteLlm
 from dotenv import load_dotenv
+
 # Load environment variables from the .env file in this directory
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 
-# https://docs.litellm.ai/docs/providers/groq
+# Suppress Gemini LiteLLM warning since native integration is not available in this ADK version
+os.environ["ADK_SUPPRESS_GEMINI_LITELLM_WARNINGS"] = "true"
+
+# Using Gemini via LiteLLM (native integration not available in this ADK version)
 model = LiteLlm(
-    model="groq/llama-3.3-70b-versatile",
-    api_key=os.getenv("GROQ_API_KEY"),
+    model="gemini/gemini-3.7-flash",
+    api_key=os.getenv("GOOGLE_API_KEY"),
 )
+
+# Alternative: If you want to use Groq models (may have multi-turn issues with tools)
+# model = LiteLlm(model="groq/qwen/qwen3.6-27b", api_key=os.getenv("GROQ_API_KEY"))
+
 
 def add_reminder(reminder: str, tool_context: ToolContext) -> dict:
     """Add a new reminder to the user's reminder list.
@@ -162,18 +170,15 @@ def update_user_name(name: str, tool_context: ToolContext) -> dict:
     }
 
 
-# Create a simple persistent agent
-memory_agent = Agent(
+# Create the root agent with ADK v2
+root_agent = LlmAgent(
     name="memory_agent",
-    #model="gemini-2.0-flash",
     model=model,
     description="A smart reminder agent with persistent memory",
     instruction="""
     You are a friendly reminder assistant that remembers users across conversations.
     
-    The user's information is stored in state:
-    - User's name: {user_name}
-    - Reminders: {reminders}
+    Use the tools to manage user information and reminders. The state will automatically persist across conversations.
     
     You can help users manage their reminders with the following capabilities:
     1. Add new reminders
@@ -238,4 +243,5 @@ memory_agent = Agent(
         delete_reminder,
         update_user_name,
     ],
+    output_key="reminder_response",
 )
