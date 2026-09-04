@@ -8,9 +8,10 @@ load_dotenv(os.path.join(os.path.dirname(__file__), "../../../.env"))
 
 # Initialize Groq model with better model
 model = LiteLlm(
-    model="groq/llama-3.3-70b-versatile",
-    api_key=os.getenv("GROQ_API_KEY"),
+    model="gemini/gemini-3.5-flash",
+    api_key=os.getenv("GOOGLE_API_KEY"),
 )
+
 
 
 def get_nerd_joke(topic: str) -> str:

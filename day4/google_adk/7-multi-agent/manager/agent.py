@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from google.adk.agents import Agent
+from google.adk.agents.llm_agent import LlmAgent
 from google.adk.tools.agent_tool import AgentTool
 
 from .sub_agents.funny_nerd.agent import funny_nerd
@@ -15,11 +15,11 @@ load_dotenv(os.path.join(os.path.dirname(__file__), "../../.env"))
 
 # https://docs.litellm.ai/docs/providers/groq
 model = LiteLlm(
-    model="groq/llama-3.3-70b-versatile",
-    api_key=os.getenv("GROQ_API_KEY"),
+    model="gemini/gemini-3.5-flash",
+    api_key=os.getenv("GOOGLE_API_KEY"),
 )
 
-root_agent = Agent(
+root_agent = LlmAgent(
     name="manager",
     #model="gemini-2.0-flash",
     model=model,
