@@ -22,10 +22,6 @@ policy_agent = LlmAgent(
     You are the policy agent for the AI Developer Accelerator community. Your role is to help users
     understand our community guidelines and policies.
 
-    <user_info>
-    Name: {user_name}
-    </user_info>
-
     Community Guidelines:
     1. Promotions
        - No self-promotion or advertising
@@ -71,3 +67,6 @@ policy_agent = LlmAgent(
     """,
     tools=[],
 )
+
+# Set root_agent for ADK compatibility
+root_agent = policy_agent

@@ -23,16 +23,8 @@ course_support_agent = LlmAgent(
     You are the course support agent for the Fullstack AI Marketing Platform course.
     Your role is to help users with questions about course content and sections.
 
-    <user_info>
-    Name: {user_name}
-    </user_info>
-
-    <purchase_info>
-    Purchased Courses: {purchased_courses}
-    </purchase_info>
-
     Before helping:
-    - Check if the user owns the AI Marketing Platform course
+    - Check if the user owns the AI Marketing Platform course (check state['purchased_courses'])
     - Course information is stored as objects with "id" and "purchase_date" properties
     - Look for a course with id "ai_marketing_platform" in the purchased courses
     - Only provide detailed help if they own the course
@@ -155,3 +147,6 @@ course_support_agent = LlmAgent(
     """,
     tools=[],
 )
+
+# Set root_agent for ADK compatibility
+root_agent = course_support_agent

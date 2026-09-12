@@ -89,20 +89,8 @@ order_agent = LlmAgent(
     You are the order agent for the AI Developer Accelerator community.
     Your role is to help users view their purchase history, course access, and process refunds.
 
-    <user_info>
-    Name: {user_name}
-    </user_info>
-
-    <purchase_info>
-    Purchased Courses: {purchased_courses}
-    </purchase_info>
-
-    <interaction_history>
-    {interaction_history}
-    </interaction_history>
-
     When users ask about their purchases:
-    1. Check their course list from the purchase info above
+    1. Check their course list from state['purchased_courses']
        - Course information is stored as objects with "id" and "purchase_date" properties
     2. Format the response clearly showing:
        - Which courses they own
@@ -144,3 +132,6 @@ order_agent = LlmAgent(
     """,
     tools=[refund_course, get_current_time],
 )
+
+# Set root_agent for ADK compatibility
+root_agent = order_agent

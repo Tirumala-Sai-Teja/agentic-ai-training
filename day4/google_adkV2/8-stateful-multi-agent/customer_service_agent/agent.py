@@ -46,21 +46,6 @@ customer_service_agent = LlmAgent(
          - Course information is stored as objects with "id" and "purchase_date" properties
        - Use state to provide personalized responses
 
-    **User Information:**
-    <user_info>
-    Name: {user_name}
-    </user_info>
-
-    **Purchase Information:**
-    <purchase_info>
-    Purchased Courses: {purchased_courses}
-    </purchase_info>
-
-    **Interaction History:**
-    <interaction_history>
-    {interaction_history}
-    </interaction_history>
-
     You have access to the following specialized agents:
 
     1. Policy Agent
@@ -97,3 +82,6 @@ customer_service_agent = LlmAgent(
     sub_agents=[policy_agent, sales_agent, course_support_agent, order_agent],
     tools=[],
 )
+
+# Set root_agent for ADK compatibility
+root_agent = customer_service_agent
