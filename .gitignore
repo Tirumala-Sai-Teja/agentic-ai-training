@@ -1,1 +1,11 @@
 .venv
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.env
+.env.local
+.env.*.local
+.env.txt
+.adk/
+*.db
