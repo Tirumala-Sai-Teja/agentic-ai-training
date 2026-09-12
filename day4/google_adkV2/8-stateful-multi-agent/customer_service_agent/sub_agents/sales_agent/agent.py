@@ -10,9 +10,10 @@ load_dotenv(os.path.join(os.path.dirname(__file__), "../../../.env"))
 
 # https://docs.litellm.ai/docs/providers/groq
 model = LiteLlm(
-    model="groq/llama-3.1-8b-instant",
-    api_key=os.getenv("GROQ_API_KEY"),
+    model="gemini/gemini-3.6-flash",
+    api_key=os.getenv("GOOGLE_API_KEY"),
 )
+
 
 def purchase_course(tool_context: ToolContext) -> dict:
     """
@@ -111,4 +112,4 @@ sales_agent = LlmAgent(
 )
 
 # Set root_agent for ADK compatibility
-root_agent = sales_agent
+# root_agent = sales_agent

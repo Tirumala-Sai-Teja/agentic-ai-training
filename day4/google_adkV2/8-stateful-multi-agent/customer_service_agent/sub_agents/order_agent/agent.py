@@ -134,4 +134,4 @@ order_agent = LlmAgent(
 )
 
 # Set root_agent for ADK compatibility
-root_agent = order_agent
+# root_agent = order_agent
