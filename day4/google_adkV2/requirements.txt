@@ -1,0 +1,7 @@
+google-adk[database]>=2.0.0
+yfinance
+psutil
+litellm
+google-generativeai
+python-dotenv
+aiosqlite
